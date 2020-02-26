@@ -10,6 +10,8 @@
  * test.run();
  * @example
  * // 测试数: 2    通过数: 1   通过率: 50%
+ * // console:
+ * // 1 === 1
  * test.assertEqual(1, 1);
  * test.assertNotEqual(1, 1);
  */
