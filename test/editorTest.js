@@ -4,4 +4,4 @@
  */
 
 // test.assertEqual(gameCanvas.width, sceneCanvas.width);
-// test.run();
+test.run();

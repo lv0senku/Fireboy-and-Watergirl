@@ -62,9 +62,11 @@ let test = {
         this.test(value, undefined, value + " is not undefined");
     },
     run: function() {
-        console.log("测试数: " + this.total +
-            "\t通过数: " + this.passed +
-            "\t通过率: " + (this.passed === 0 ?
-                "0%" : this.passed / this.total * 100 + "%"));
+        if (this.total) {
+            console.log("测试数: " + this.total +
+                "\t通过数: " + this.passed +
+                "\t通过率: " + (this.passed === 0 ?
+                    "0%" : this.passed / this.total * 100 + "%"));
+        }
     },
 };
