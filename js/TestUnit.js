@@ -1,3 +1,18 @@
+/**
+ * @author 胡子豪 <wuqieor@outlook.com>
+ */
+
+/**
+ * 测试框架
+ * @example
+ * // 测试数: 1    通过数: 1   通过率: 100%
+ * test.assertTrue(true);
+ * test.run();
+ * @example
+ * // 测试数: 2    通过数: 1   通过率: 50%
+ * test.assertEqual(1, 1);
+ * test.assertNotEqual(1, 1);
+ */
 let test = {
     passed: 0,
     total: 0,
