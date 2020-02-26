@@ -23,6 +23,7 @@ body {
     margin: 0 auto;
 }
 
+/* 占满整个屏幕 */
 html,body {
     width: 100%;
     height: 100%;
