@@ -12,12 +12,18 @@ a{
     text-decoration: none;
     color: #666;
 }
+
 img{
     border: none;
     display: block;
 }
 
-body{
+body {
     min-width: 320px;
     margin: 0 auto;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
 }
