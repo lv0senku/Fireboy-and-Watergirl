@@ -1,0 +1,28 @@
+{
+  "name": "Fireboy-and-Watergirl",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "基于编辑器的森林冰火人。",
+  "scripts": {
+    "doc": "jsdoc -c ./jsdoc.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jsdoc": "^3.6.3"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RRCAT920/Fireboy-and-Watergirl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RRCAT920/Fireboy-and-Watergirl/issues"
+  },
+  "homepage": "https://github.com/RRCAT920/Fireboy-and-Watergirl#readme"
+}
