@@ -7,27 +7,36 @@
     <link rel="stylesheet" href="css/editor.css" type="text/css">
 </head>
 <body>
-<div id="scene">
-    <span>场景</span>
+<div id="display">
+    <div id="tab">
+        <span>场景</span>
+        <span>游戏</span>
+    </div>
+    <canvas></canvas>
     <canvas></canvas>
 </div>
-<!--<div id="hierarchy">-->
-<!--    <span>层次结构</span>-->
-<!--    <div></div>-->
-<!--</div>-->
-<!--<div id="inspector">-->
-<!--    <span>审视器</span>-->
-<!--    <div></div>-->
-<!--</div>-->
-<!--<div id="game">-->
-<!--    <span>游戏</span>-->
-<!--    <canvas></canvas>-->
-<!--</div>-->
-<!--<div id="project">-->
-<!--    <span>项目</span>-->
-<!--    <div></div>-->
-<!--</div>-->
 
+<div id="HPcontainer">
+    <div id="hierarchy">
+        <span>层次结构</span>
+        <div></div>
+    </div>
+    <div id="project">
+        <span>项目</span>
+        <div></div>
+    </div>
+</div>
+
+<div id="inspector">
+    <span>审视器</span>
+    <div></div>
+</div>
+
+
+
+<script src="js/TestUnit.js"></script>
 <script src="js/editor.js"></script>
+<!--测试editor-->
+<script src="test/editorTest.js"></script>
 </body>
 </html>

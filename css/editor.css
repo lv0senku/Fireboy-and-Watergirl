@@ -1,5 +1,86 @@
-#scene {
-    border: 1px solid black;
+/**
+ * @author rrcat920 <wuqieor@outlook.com>
+ * @date 2020/2/26 21:56
+ */
+body {
+    display: flex;
+    background-color: #292a27;
+    color: #8c9192;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+#display {
     width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#tab {
+    flex-grow: 0;
+    display: flex;
+}
+
+span {
+    font-size: 14px;
+    display: block;
+    width: 80px;
+    height: 20px;
+    text-indent: 1em;
+    box-sizing: border-box;
+    user-select: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #383838;
+}
+
+#tab>span:nth-of-type(2) {
+    background-color: #292a27;
+}
+
+#display>canvas {
+    width: 100%;
+    flex-grow: 1;
+}
+
+#display>canvas:nth-of-type(1) {
+    background-color: #3e999f;
+}
+
+#display>canvas:nth-of-type(2) {
+    background-color: #950B02;
+    display: none;
+}
+
+#HPcontainer {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+#hierarchy {
     height: 50%;
+    margin-bottom: 6px;
+}
+
+#project {
+    height: 50%;
+}
+
+#inspector {
+    width: 20%;
+}
+
+#hierarchy, #project, #inspector {
+    display: flex;
+    flex-direction: column;
+}
+
+#hierarchy>div, #project>div, #inspector>div {
+    background-color: #383838;
+    height: 100%;
 }

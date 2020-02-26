@@ -1,5 +1,6 @@
 /**
- * @author 胡子豪 <wuqieor@outlook.com>
+ * @author rrcat920 <wuqieor@outlook.com>
+ * @date 2020/2/26 21:38
  */
 
 /**
@@ -18,6 +19,13 @@
 let test = {
     passed: 0,
     total: 0,
+    /**
+     * 私有的小测试函数
+     * @param lhs 左边
+     * @param rhs 右边
+     * @param str 输出字符串
+     * @param flag 等于传入true，否则false
+     */
     test: function (lhs, rhs, str, flag = true) {
         ++this.total;
         if (flag) {
