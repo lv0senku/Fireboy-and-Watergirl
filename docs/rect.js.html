@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: editor.js</title>
+    <title>JSDoc: Source: rect.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: editor.js</h1>
+    <h1 class="page-title">Source: rect.js</h1>
 
     
 
@@ -27,40 +27,35 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * @author rrcat920 &lt;wuqieor@outlook.com>
- * @date 2020/2/26 21:56
+ * @author rrcat920
+ * @description 表示一个矩形刚体
  */
+class Rect {
+  /**
+   * @param {number} x x坐标
+   * @param {number} y y坐标
+   * @param {number} width 宽度
+   * @param {number} height 高度
+   */
+  constructor(x, y, width, height) {
+    /** @type {number} */
+    this.x = x;
 
-let canvasArray = document.querySelectorAll("#display>canvas");
-let spanArray = document.querySelectorAll("#tab>span");
-tab(spanArray, canvasArray);
+    /** @type {number} */
+    this.x = y;
 
-/**
- * 使用lhs控制rhs的tab选项
- * @param lhs {NodeListOf&lt;Element>} tab选项
- * @param rhs {NodeListOf&lt;Element>} 显示页面
- */
+    /** @type {number} */
+    this.width = width;
 
-function tab(lhs, rhs) {
-  for (let i = 0; i &lt; lhs.length; ++i) {
-    lhs[i].index = i;
-    lhs[i].onclick = function() {
-      rhs[this.index].style.display = "block";
-      this.style.backgroundColor = "#383838";
-      for (let j = 0; j &lt; rhs.length; ++j) {
-        if (j === this.index) {
-          continue;
-        }
-        rhs[j].style.display = "none";
-      }
+    /** @type {number} */
+    this.height = height;
+  }
 
-      for (let k = 0; k &lt; lhs.length; ++k) {
-        if (k === this.index) {
-          continue;
-        }
-        lhs[k].style.backgroundColor = "#292a27";
-      }
-    };
+  /**
+   * say hello
+   */
+  hello() {
+    console.log("hello");
   }
 }
 </code></pre>
